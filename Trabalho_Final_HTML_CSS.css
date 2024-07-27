@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.nav_nome{
+    font-family: Sevillana;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: rgb(30, 204, 210);
+    text-align: right;
+    padding: 10px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #333;
+    color: rgb(152, 242, 244);
+    text-align: center;
+    padding: 10px;
+}
+/* TOPO */
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-btn {
+    background-color:  rgb(152, 242, 244);
+    color:#333;
+    padding: 14px 16px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.menu-content {
+    width: 100%;
+    display: none;
+    position: absolute;
+    background-color:  rgb(152, 242, 244);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu-content a {
+    display: block;
+    text-align: center;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.menu-btn:hover .menu-content {
+    display: block;
+}
+
+.fabio a {
+    float: left;
+    color: rgb(152, 242, 244);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.menu a {
+    float: right;
+    color: rgb(152, 242, 244);
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* CORPO */
+@media (max-width: 768px) {
+    .PrimeiraColuna, .SegundaColuna {
+        width: 100%;
+        float: none;
+    }
+}
+
+.DiaHora .linha {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 15px 0;
+    gap: 46px;
+}
+
+.DiaHora .linha1 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 15px 0;
+    gap: 20px;
+}
+
+p1, .data, .hora {
+    margin: 0;
+    padding: 0;
+}
+
+.data {
+    text-align: center;
+}
+
+.hora {
+    text-align: center;
+}
+
+.PrimeiraColuna {
+    float: left;
+    width: 100vw;
+    background-color:  #333;
+    color:  rgb(152, 242, 244);
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+video {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informativo{
+    width: 50%;
+}
+
+.cadastro{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
